@@ -1,16 +1,14 @@
-import {View, Text, TextInput} from 'react-native';
-import React, {useState} from 'react';
+import {Text, View} from 'react-native';
+import Logo from './components/Logo';
 
 
-export default function App(){
-  const [fullname, setFullname] = useState("Eoin");
-  return(
-    <View> 
-      <Text>Hello, World {fullname}</Text>
-      <TextInput placeholder="enter your name" onChangeText={(value)=>setFullname(value)}></TextInput>
+export default function App() {
+  return (
+    <View>
+      <Logo/>
     </View>
+    
   )
-};
-
+}
 
 
